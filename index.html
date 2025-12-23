@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Cerita Singkat</title>
+    <style>
+        body {
+            background-color: #f0e2d0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Container Utama Buku */
+        .book {
+            display: flex;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fffef0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            overflow: hidden;
+            border: 10px solid #5d4037;
+        }
+
+        /* Halaman */
+        .page {
+            flex: 1;
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Garis Tengah Buku */
+        .page-left {
+            border-right: 1px solid rgba(0,0,0,0.1);
+            background: linear-gradient(to right, #fffef0 95%, #e0d8c3 100%);
+        }
+
+        .page-right {
+            background: linear-gradient(to left, #fffef0 95%, #e0d8c3 100%);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+        }
+
+        .photo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .audio-player {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            .book {
+                flex-direction: column;
+                width: 95%;
+            }
+            .page-left {
+                border-right: none;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="book">
+    <div class="page page-left">
+        <h1>Rumah Singgah.</h1>
+        <div class="photo-container">
+            <img src="couple.jpeg" alt="Cavyssa & North">
+        </div>
+        <hr>
+        <p style="font-size: 0.9em; text-align: center;">🎵 Seamin Tak Seiman?</p>
+        
+        <audio class="audio-player" controls>
+            <source src="manguu.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung elemen audio.
+        </audio>
+        <p>
+            Hari demi hari berjalan dengan kehampaan yang melanda, tepat 2 tahun lalu aku
+mendambakan seseorang, namun berbeda dengan 2 tahun yang lalu, kini aku
+hanya termenung sendiri, menikmati angin malam serta suara dari lembutnya
+deburan ombak yang menjadi irama di malam sunyiku. 
+            </p>
+        <p>Kamu tahu? Sudah 2 tahun lamanya, aku selalu menghampiri tempat yang sama
+saat kita masih bersama, berharap bisa melihatmu kembali. Namun, semua itu
+hanyalah sebuah delusi tanpa batas yang tidak bisa aku kendalikan. Bagaimana kabarmu sekarang? Apakah masih selalu memeluk boneka
+kesayanganmu jika tertidur? Apakah masih selalu menggunakan sepasang kaos
+kaki sebagai penghangat dikala dinginnya angin malam yang melanda?
+            </p>
+        <p>Tjoeana Giografis. Nama terindah yang pernah aku aku ukir dalam Mahakarya
+terbaik sepanjang hidupku. Aku sungguh mendambakan kehadirannya, aku
+sungguh mencintainya.
+            </p>
+    </div>
+
+    <div class="page page-right">
+        <p>
+            Ingin sekali rasanya bisa memanjakannya dikala ia butuh
+untuk dimanjakan, menggenggam erat tangannya dikala ia bersedih, menjadi
+bahu ternyaman dikala ia membutuhkan sandaran, memberi pelukan terhangat
+dikala ia merasa kedinginan. Gadis cantik yang selama ini aku cintai, kini telah menemukan seorang laki-laki
+yang mampu menuntunnya ke jalan yang lebih baik. Berbanding terbalik
+denganku, Joseph Giografis. 
+            </p>
+        <p>
+            Aku tidak pernah menyesali pertemuan kita, pertemuan yang pernah membawa
+kita merasakan bagaimana rasanya dicintai, dihargai, didambakan oleh pasangan. Jika boleh jujur, aku sangat tidak bersedia untuk melepasnya kala itu, biarlah dia
+bersama pria lain, namun aku tetap ingin berada di dekatnya.
+Aroma manis yang terpancar dari tubuhnya menjadi parfume terbaik yang pernah
+aku hirup, senyum termanis yang selalu ia tunjukkan untukku, kini sudah beralih
+kepada orang yang ia usahakan. Andai saja waktu bisa diulangi, mungkin aku akan
+lebih banyak menikmati setiap kesempatan bersamanya.
+            </p>
+        <p><b><i>
+            Mencintaimu adalah seni terindah yang pernah terukir dalam hidupku, begitu banyak warna abstrak cantik yang memenuhi kanvas monochrome itu. 
+Aku hanya ingin mengucapkan terimakasih karena kamu tetap memilihku dikala banyaknya perhatian yang bisa saja kamu dapatkan dengan mudah. 
+            </i></b></p>
+        <p>
+    <i>Jika bisa memilih, aku ingin kita terlahir kembali menjadi kita yang memungkinkan untuk mengusahakan satu sama lain. 
+            </p>
+        <p>
+        Namun, bertemu denganmu dalam versi apapun akan selalu menjadi best part of my life.</i>
+            </p>
+    </div>
+</div>
+
+</body>
+</html>
